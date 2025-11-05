@@ -1,0 +1,849 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    text-align: center;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ul {
+    background-color: black;
+    overflow: hidden;
+    margin: 2px;
+    border-radius: 3px;
+    height: 90px;
+    text-align: center;
+}
+
+.unorder {
+    cursor: pointer;
+    color: white;
+    display: flex;
+    margin-left: 50px;
+}
+
+.icon {
+    cursor: pointer;
+    text-align: center;
+    padding: 30px 20px 10px 20px;
+    }
+
+.home {
+    cursor: pointer;
+    font-size: smaller;
+    padding: 30px 20px 10px 30px;
+    text-align: center;
+    font-weight: 100;
+
+}
+
+.search {
+    font-size: smaller;
+    padding: 20px 20px 10px 10px;
+    text-align: center;
+    
+}
+
+.search input {
+    border: 3px solid black;
+    background-color: rgba(105, 105, 105, 0.221);
+    font-size: larger;
+    border-radius: 20px;
+    text-align: center;
+    padding: 6px;
+    color: white;
+    width: 350px;
+
+}
+
+.search input::placeholder {
+    color: white;
+}
+
+.download {
+    font-size: smaller;
+    padding: 30px 20px 10px 200px;
+    text-align: center;
+    height: 9px;
+    margin-top: 3px;
+}
+
+.colorline {
+    background-color: white;
+    width: 2px;
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 50px;
+
+}
+
+.app {
+    font-size: smaller;
+    padding: 30px 20px 10px 100px;
+    text-align: center;
+}
+
+.bell {
+    font-size: 30px;
+    padding: 30px 20px 10px 100px;
+    text-align: center;
+    width: 50px;
+    
+}
+
+.user {
+    font-size: 30px;
+    padding: 30px 20px 10px 40px;
+    text-align: center;
+
+}
+
+.user-t {
+    font-size: 30px;
+    padding: 30px 20px 10px 40px;
+    text-align: center;
+}
+
+.library {
+    cursor: pointer;
+    margin-left: 5px;
+    height: auto;
+    width: 395px;
+    border-radius: 6px;
+    text-align: left;
+    background-color: rgba(35, 33, 33, 0.986);
+}
+
+.library h2 {
+    font-size: large;
+    font-weight: 300;
+    height: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+.library h3 {
+    margin-top: 3px;
+    height: 20px;
+    text-align: center;
+    width: 80px;
+    margin-left: 70px;
+    font-weight: 200;
+    background-color: rgba(128, 128, 128, 0.221);
+    border-radius: 20px;
+
+}
+
+.library i {
+    height: 20px;
+    font-size: large;
+    margin-left: 10px;
+    font-weight: 600;
+    margin-top: 6px;
+
+}
+
+.lsearch {
+    height: 50px;
+    border-radius: 6px;
+    background-color: rgba(35, 33, 33, 0.965);
+    color: white;
+    display: flex;
+}
+
+
+
+.list {
+    background-color: rgba(35, 33, 33, 0.986);
+    display: flex;
+    color: white;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.play {
+
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.221);
+    width: 100%;
+    height: 30px;
+    font-size: larger;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.play h4 {
+    margin-top: 5px;
+}
+
+.art {
+
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.221);
+    width: 100%;
+    margin-left: 20px;
+    height: 30px;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.art h4 {
+    margin-top: 5px;
+}
+
+.alb {
+
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: hsla(0, 0%, 50%, 0.221);
+    width: 100%;
+    height: 30px;
+    font-size: larger;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.alb h4 {
+    margin-top: 5px;
+}
+
+.recents {
+    cursor: pointer;
+    display: flex;
+    background-color: rgba(35, 33, 33, 0.986);
+    color: white;
+}
+
+.rsea {
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.rrsea {
+
+    margin-top: 10px;
+    text-align: right;
+    padding-left: 200px;
+}
+
+.listi {
+    margin-top: 7.5px;
+    font-size: large;
+    padding-bottom: 10px;
+}
+
+.likedsong {
+    gap: 6px;
+    display: flex;
+
+}
+
+.hear {
+    border: 2px solid linear-gradient(135deg, #450af5, #c4efd9);
+    margin-left: 10px;
+    font-size: 40px;
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #450af5, #c4efd9);
+    color: white;
+}
+
+.lr {
+    margin-top: 20px;
+    color: white;
+    font-size: smaller;
+    width: 70%;
+}
+
+.lr h2 {
+    text-align: left;
+    margin-top: 8px;
+    color: green;
+    font-size: large;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.lr i {
+    font-size: x-small;
+    color: green;
+}
+
+.sharma {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    color: white;
+    gap: 10px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.si {
+    border: 3px solid none;
+    border-radius: 50%;
+    background-image: url(/SPOTIFY/download-resizehood.com\ \(3\).png);
+    width: 15%;
+    height: 55px;
+}
+
+.maninder {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    color: white;
+    gap: 10px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.mi {
+    border: 3px solid none;
+    border-radius: 50%;
+    background-image: url(/SPOTIFY/maninder.png);
+    width: 15%;
+    height: 55px;
+}
+
+.ndee {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    color: white;
+    gap: 10px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.ni {
+    border: 3px solid none;
+    border-radius: 50%;
+    background-image: url(/SPOTIFY/ndee.png);
+    width: 15%;
+    height: 55px;
+}
+
+.satinder {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    color: white;
+    gap: 10px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.ssi {
+    border: 3px solid none;
+    border-radius: 50%;
+    background-image: url(/SPOTIFY/ss.png);
+    width: 15%;
+    height: 55px;
+}
+
+.bintu {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    color: white;
+    gap: 10px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.bi {
+    border: 3px solid none;
+    border-radius: 50%;
+    background-image: url(/SPOTIFY/bintu.png);
+    width: 15%;
+    height: 55px;
+}
+
+.laddi {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    color: white;
+    gap: 10px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.lci {
+    border: 3px solid none;
+    border-radius: 50%;
+    background-image: url(/SPOTIFY/laddi.png);
+    width: 15%;
+    height: 55px;
+}
+
+.arjit {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    color: white;
+    gap: 10px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.ai {
+    border: 3px solid none;
+    border-radius: 50%;
+    background-image: url(/SPOTIFY/arjit.png);
+    width: 15%;
+    height: 55px;
+}
+
+.kd {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    color: white;
+    gap: 10px;
+    margin-top: 18px;
+    margin-left: 10px;
+}
+
+.ki {
+    border: 3px solid none;
+    border-radius: 50%;
+    background-image: url(/SPOTIFY/kd.png);
+    width: 15%;
+    height: 55px;
+}
+
+.komal {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    color: white;
+    gap: 10px;
+    margin-top: 18px;
+    margin-left: 10px;
+}
+
+.kci {
+    border: 3px solid none;
+    border-radius: 50%;
+    background-image: url(/SPOTIFY/komal.png);
+    width: 15%;
+    height: 55px;
+}
+
+.jass {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    color: white;
+    gap: 10px;
+    margin-top: 18px;
+    margin-left: 10px;
+}
+
+.ji {
+    border: 3px solid none;
+    border-radius: 50%;
+    background-image: url(/SPOTIFY/jass.png);
+    width: 15%;
+    height: 55px;
+}
+
+.sumit {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    color: white;
+    gap: 10px;
+    margin-top: 18px;
+    margin-left: 10px;
+}
+
+.sui {
+    border: 3px solid none;
+    border-radius: 50%;
+    background-image: url(/SPOTIFY/summit.png);
+    width: 15%;
+    height: 55px;
+}
+
+.song {
+    cursor: pointer;
+    background: linear-gradient(190deg, #2c1f4e, #121212);
+    width: 80%;
+    height: auto;
+    margin-left: 400px;
+    border-radius: 3px;
+    margin-top: -58.8%;
+    position: absolute;
+}
+
+.filters {
+    display: flex;
+    gap: 12px;
+}
+
+.filters input[type="radio"] {
+    display: none;
+}
+
+.filters label {
+    background-color: #2a2a2a;
+    border-radius: 20px;
+    padding: 8px 18px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.filters label:hover {
+    background-color: #3e3e3e;
+}
+
+.filters input[type="radio"]:checked+label {
+    background-color: white;
+    color: black;
+}
+
+
+.sall {
+    border: 2px solid grey;
+    border-radius: 20px;
+    background-color: grey;
+    width: 4%;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+
+.sall:hover {
+    transform: scale(1.05);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.smusic {
+    border: 2px solid grey;
+    border-radius: 20px;
+    background-color: grey;
+    width: 6%;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+
+.smusic:hover {
+    transform: scale(1.05);
+}
+
+.spod {
+    border: 2px solid grey;
+    border-radius: 20px;
+    background-color: grey;
+    width: 7%;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+
+.spod:hover {
+    transform: scale(1.05);
+    transition: ease-in-out 0.5s;
+}
+
+.songlinefirst {
+    background-attachment: scroll;
+    display: flex;
+    gap: 6px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.ttttt {
+    display: flex;
+    gap: 5px;
+    margin-left: 16px;
+}
+
+
+.ttt1 {
+    display: flex;
+    gap: 5px;
+    margin-left: 16px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: ease-in-out 0.5s;
+}
+
+.gatt {
+    gap: 50px;
+}
+
+.likesong {
+    display: flex;
+    height: 80px;
+}
+
+.likesong:hover {
+    transform: scale(1.05);
+    transition: ease-in-out 0.5s;
+}
+
+.heart {
+    border: 2px solid linear-gradient(135deg, #450af5, #c4efd9);
+    margin-left: 10px;
+    font-size: 37px;
+    padding-right: 30px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    background: linear-gradient(135deg, #450af5, #c4efd9);
+    color: white;
+}
+
+.li {
+    border: 2px solid none;
+    margin-top: 30px;
+    background-color: rgba(238, 237, 237, 0.114);
+    color: rgb(255, 255, 255);
+    font-size: small;
+    font-weight: 300;
+    width: 80%;
+    padding-right: 15px;
+}
+
+.li h1 {
+    text-align: left;
+    margin-top: 2px;
+    height: 40px;
+
+}
+
+.likessongadd {
+    display: flex;
+    text-align: center;
+
+}
+
+.card {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    color: white;
+    margin-top: 30px;
+    margin-left: 6px;
+    width: 17%;
+    height: 55px;
+
+
+}
+
+.card p {
+    width: 100%;
+    border: 1px solid none;
+    height: 55px;
+    background-color: rgba(238, 237, 237, 0.114);
+
+}
+
+.card img {
+    height: 55px;
+    width: 45px;
+    border-radius: 4px;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+.madeforuser {
+    margin-top: 20px;
+}
+
+.madeforuser h3 {
+    margin-left: 20px;
+    background-color:#2c1f4e00;
+    color: white;
+}
+
+.madeforuser h1 {
+    margin-left: 25px;
+    color: white;
+}
+
+
+.artist-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: left;
+    margin-left: 80px;
+
+}
+
+.artist-card {
+    background-color: #2c253e15;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    margin-top: 40px;
+    text-align: center;
+
+
+}
+
+.artist-card:hover {
+    transform: scale(1.05);
+    transition: ease-in-out 0.5s;
+}
+
+.artist-card img {
+    border-radius: 5px;
+    width: 200px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.artist-card h3 {
+    margin: 1px 0;
+    font-size: 20px;
+    height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    width: 100%;
+    background-color: #03020216;
+
+}
+
+.recentlyplayed {
+    margin-top: 20px;
+    display: flex;
+}
+
+.recentlyplayed h1 {
+    margin-left: 25px;
+    color: white;
+}
+
+.recentlyplayed h4 {
+    color: white;
+    margin-top: 10px;
+    margin-left: 780px;
+}
+
+.artist-containerrr {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: left;
+    margin-left: 80px;
+
+}
+
+.artist-cardd {
+    background-color: #2c253e15;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    margin-top: 40px;
+    text-align: center;
+
+
+}
+
+.artist-cardd:hover {
+    
+    transform: scale(1.05);
+    transition: ease-in-out 0.5s;
+}
+
+.artist-cardd img {
+    border-radius: 5px;
+    width: 200px;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+.artist-cardd h3 {
+    margin: 1px 0;
+    height: 70px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    background-color: #03020216;
+
+}
+.artist-cardd h3 pre{
+    color: grey;
+    font-size: large;
+    height: 30;
+}
+
+.media-player {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+  max-width: 800px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color:white;
+  font-size: 24px;
+}
+
+.controls .active {
+  color: limegreen;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  margin-top: -20px;
+}
+
+.progress input[type=range] {
+  flex: 1;
+  accent-color: white;
+}
+.progress span {
+  color: white;
+}
+
+.right-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  margin-left: 1250px;
+  margin-bottom: 0px;
+  gap: 15px;
+  margin-top: -10px;
+  font-size: 18px;
+}
+
+.volume-slider {
+  width: 100px;
+  accent-color: white;
+}
+
+
+
+
+   
